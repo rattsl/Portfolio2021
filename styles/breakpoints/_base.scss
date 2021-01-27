@@ -1,3 +1,114 @@
+/******************************************************************
+Stylesheet: ベーススタイル(スマホ)
+******************************************************************/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 1.5px;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+//Font
+.font-sr{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.font-sm{
+  font-size: 15px;
+  font-weight: 600;
+}
+.font-md{
+  font-size: 18px;
+}
+.font-lr{
+  font-size: 18px;
+  font-weight: 600;
+}
+.font-lg{
+  font-size: 25x;
+}
+
+//margin,padding
+.mb-sm{
+  margin-bottom: 16px !important;
+}
+.mb-lg{
+  margin-bottom: 80px !important;
+}
+.pb-sm{
+  padding-bottom: 16px !important;
+}
+.pb-lg{
+  padding-bottom: 80px !important;
+}
+
+.content-width{
+  width: 95%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.main-title{
+  @extend .font-lg;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title{
+  font-size: 10px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  position: relative;
+  z-index: -1;
+}
+
 .header{
-  color: $cWhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $navHeight;
+  z-index: 100;
+  background-color: transparent;
+  align-items: center;
+
+  &__inner{
+    @extend .flex;
+    @extend .content-width;
+
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__nav{
+    display: none;
+  }
+
+  & .logo{
+    display: inline-block;
+    font-size: 38px;
+    justify-content: center;
+    
+  }
 }

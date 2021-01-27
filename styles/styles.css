@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mobile-menu__btn {
   background-color: unset;
   border: none;
@@ -50,7 +51,131 @@
           transform: translateY(-11px) rotate(-135deg);
 }
 
+/******************************************************************
+Stylesheet: ベーススタイル(スマホ)
+******************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 1.5px;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sr {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.font-sm {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.font-lr {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.font-lg, .main-title {
+  font-size: 25x;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width, .header__inner {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+.main-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.sub-title {
+  font-size: 10px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.flex, .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  position: relative;
+  z-index: -1;
+}
+
 .header {
-  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  background-color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header .logo {
+  display: inline-block;
+  font-size: 38px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
