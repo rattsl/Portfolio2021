@@ -1,0 +1,16 @@
+@import 'modules/variables';
+@import 'modules/mixin';
+
+//モバイルファースト
+@import "breakpoints/base";
+
+//Ipad等タブレットに適応
+@media (min-width: 768px) {
+  @import "breakpoints/768up";
+}
+
+//通常PCのディスプレイに適応
+@media (min-width: 1024px) {
+  @import "breakpoints/1024up";
+}
+

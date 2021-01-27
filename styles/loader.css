@@ -1,11 +1,9 @@
-@import 'modules/mixin';
-@import 'modules/variables';
-
-#global-container{
+#global-container {
   opacity: 0;
 }
 
-.pace-done #global-container{
+.pace-done #global-container {
+  -webkit-transition: opacity 1s;
   transition: opacity 1s;
   opacity: 1;
 }
@@ -13,25 +11,16 @@
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
- 
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none;
- 
+  -ms-user-select: none;
+      user-select: none;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
- 
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
   border-radius: 10px;
- 
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
- 
   z-index: 2000;
   position: fixed;
   margin: auto;
@@ -42,21 +31,22 @@
   width: 100px;
   height: 100px;
 }
- 
+
 .pace .pace-progress {
-  transform: none !important;
+  -webkit-transform: none !important;
+          transform: none !important;
   text-align: center;
 }
- 
+
 .pace .pace-progress:after {
   content: attr(data-progress-text);
   display: block;
   font-weight: 100;
   font-size: 1.2em;
   font-family: 'Helvetica Neue', 'Yu Gothic', 'Meiryo', sans-serif;
-  color: $cSubTitle;
+  color: #535353;
 }
- 
+
 .pace.pace-inactive {
   display: none;
 }
@@ -66,28 +56,30 @@
   height: 40px;
   margin: 0 auto;
   background-color: #333;
-
-  border-radius: 100%;  
+  border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-scaleout {
-  0% { -webkit-transform: scale(0) }
+  0% {
+    -webkit-transform: scale(0);
+  }
   100% {
-    -webkit-transform: scale(1.0);
+    -webkit-transform: scale(1);
     opacity: 0;
   }
 }
 
 @keyframes sk-scaleout {
-  0% { 
+  0% {
     -webkit-transform: scale(0);
     transform: scale(0);
-  } 100% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 0;
   }
 }
-
+/*# sourceMappingURL=loader.css.map */
