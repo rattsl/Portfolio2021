@@ -89,7 +89,7 @@ img {
   font-weight: 600;
 }
 
-.font-lg, .main-title {
+.font-lg, .main-title, .about__title {
   font-size: 25x;
 }
 
@@ -115,7 +115,7 @@ img {
   max-width: 1070px;
 }
 
-.main-title {
+.main-title, .about__title {
   font-weight: 600;
   margin-bottom: 0;
 }
@@ -201,8 +201,19 @@ main {
 }
 
 .about {
+  text-align: center;
   position: relative;
   z-index: 1;
+  padding-top: 20px;
+}
+
+.about__img {
+  width: 60%;
+  height: auto;
+}
+
+.about__ul {
+  list-style: none;
 }
 
 .prof__texts {

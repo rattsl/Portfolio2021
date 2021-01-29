@@ -137,8 +137,23 @@ main{
 .about{
   @extend .content-width;
 
+  text-align: center;
   position: relative;
   z-index: 1;
+  padding-top: 20px;
+
+  &__title{
+    @extend .main-title;
+  }
+
+  &__img{
+    width: 60%;
+    height: auto;
+  }
+
+  &__ul{
+    list-style: none;
+  }
 }
 
 .prof{
