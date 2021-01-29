@@ -97,12 +97,20 @@ img {
   margin-bottom: 16px !important;
 }
 
+.mb-md, .life__childhood, .life__school, .life__college, .life__univ {
+  margin-bottom: 36px !important;
+}
+
 .mb-lg {
   margin-bottom: 80px !important;
 }
 
 .pb-sm {
   padding-bottom: 16px !important;
+}
+
+.pb-md {
+  padding-bottom: 36px !important;
 }
 
 .pb-lg {
@@ -189,6 +197,60 @@ main {
   height: 650px;
   width: 100%;
   background-color: teal;
+  z-index: 5;
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+}
+
+.hero__footer {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 83px;
+  width: 18px;
+  z-index: 15;
+  overflow: hidden;
+}
+
+.hero__downarrow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 7px;
+  -webkit-animation-name: kf-arrow-anime;
+          animation-name: kf-arrow-anime;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.hero__scrolltext {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: rgba(255, 255, 255, 0.7);
+  top: 22px;
+  left: -8px;
+  font-size: 0.9em;
 }
 
 #content {
@@ -196,11 +258,7 @@ main {
   top: 0;
   left: 0;
   z-index: 0;
-  width: 100%;
-  height: 1800px;
   background-image: url("../../assets/bg_img.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .about {
@@ -282,5 +340,40 @@ main {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+
+.life__heading {
+  border-bottom: 3px solid #979797;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+@-webkit-keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  70% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes kf-arrow-anime {
+  0%,
+  50%,
+  100% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  70% {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
