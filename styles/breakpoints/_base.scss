@@ -221,3 +221,41 @@ main{
   }
 
 }
+
+.life{
+  @extend .content-width;
+  @extend .sec-space;
+
+  &__title{
+    @extend .main-title;
+    text-align: center;
+  }
+
+  &__explain{
+    text-align: center;
+  }
+
+  &__container{
+    @extend .flex;
+  }
+
+  &__childhood{
+    @extend .flex;
+  }
+
+  &__school{
+    @extend .flex;
+
+    flex-direction: column-reverse;
+  }
+
+  &__college{
+    @extend .flex;
+  }
+
+  &__univ{
+    @extend .flex;
+
+    flex-direction: column-reverse;
+  }
+}

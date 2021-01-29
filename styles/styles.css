@@ -89,7 +89,7 @@ img {
   font-weight: 600;
 }
 
-.font-lg, .main-title, .about__title, .prof__title, .prof__name {
+.font-lg, .main-title, .about__title, .prof__title, .prof__name, .life__title {
   font-size: 25x;
 }
 
@@ -109,17 +109,17 @@ img {
   padding-bottom: 80px !important;
 }
 
-.sec-space, .about, .prof {
+.sec-space, .about, .prof, .life {
   padding: 50px 0 !important;
 }
 
-.content-width, .header__inner, .about {
+.content-width, .header__inner, .about, .life {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
 }
 
-.main-title, .about__title, .prof__title, .prof__name {
+.main-title, .about__title, .prof__title, .prof__name, .life__title {
   font-weight: 600;
   padding: 0.8em 0;
 }
@@ -129,7 +129,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header__inner, .prof__container {
+.flex, .header__inner, .prof__container, .life__container, .life__childhood, .life__school, .life__college, .life__univ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,5 +260,27 @@ main {
   padding: 20px;
   border-top: 3px solid #fff;
   list-style: none;
+}
+
+.life__title {
+  text-align: center;
+}
+
+.life__explain {
+  text-align: center;
+}
+
+.life__school {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.life__univ {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 /*# sourceMappingURL=styles.css.map */
