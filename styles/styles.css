@@ -93,7 +93,7 @@ img {
   font-size: 25x;
 }
 
-.mb-sm {
+.mb-sm, .skills__title, .skills__explain {
   margin-bottom: 16px !important;
 }
 
@@ -117,11 +117,11 @@ img {
   padding-bottom: 80px !important;
 }
 
-.sec-space, .about, .prof, .life {
+.sec-space, .about, .prof, .life, .skills, .works {
   padding: 50px 0 !important;
 }
 
-.content-width, .header__inner, .about, .life {
+.content-width, .header__inner, .about, .life, .skills__title, .skills__explain {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -344,6 +344,19 @@ main {
 
 .life__heading {
   border-bottom: 3px solid #979797;
+}
+
+.skills__title {
+  text-align: center;
+}
+
+.works__title {
+  text-align: center;
+}
+
+.swiper-container {
+  overflow: visible !important;
+  margin: 40px 0;
 }
 
 .swiper-slide {

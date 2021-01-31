@@ -312,11 +312,34 @@ main{
 }
 
 .skills{
+  @extend .sec-space;
+
+  &__title{
+    @extend .content-width;
+    @extend .mb-sm;
+    
+    text-align: center;
+  }
+
+  &__explain{
+    @extend .content-width;
+    @extend .mb-sm;
+
+  }
 }
 
-// .swiper-container {
-//   overflow: visible !important;
-// }
+.works{
+  @extend .sec-space;
+
+  &__title{
+    text-align: center;
+  }
+}
+
+.swiper-container {
+  overflow: visible !important;
+  margin: 40px 0;
+}
 
 .swiper-slide{
   height: 220px;
