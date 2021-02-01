@@ -70,12 +70,12 @@ img {
   vertical-align: bottom;
 }
 
-.font-sr {
+.font-sr, .footer__copyright {
   font-size: 12px;
   font-weight: 600;
 }
 
-.font-sm {
+.font-sm, .footer__li {
   font-size: 15px;
   font-weight: 600;
 }
@@ -93,11 +93,11 @@ img {
   font-size: 25x;
 }
 
-.mb-sm, .skills__title, .skills__explain {
+.mb-sm, .skills__title, .skills__explain, .works__name, .works__tech, .works__url {
   margin-bottom: 16px !important;
 }
 
-.mb-md, .life__childhood, .life__school, .life__college, .life__univ {
+.mb-md, .life__childhood, .life__school, .life__college, .life__univ, .works__text {
   margin-bottom: 36px !important;
 }
 
@@ -121,7 +121,7 @@ img {
   padding: 50px 0 !important;
 }
 
-.content-width, .header__inner, .about, .life, .skills__title, .skills__explain {
+.content-width, .header__inner, .about, .life, .skills__title, .skills__explain, .works, .works__text {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -137,7 +137,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header__inner, .prof__container, .life__container, .life__childhood, .life__school, .life__college, .life__univ {
+.flex, .header__inner, .prof__container, .life__container, .life__childhood, .life__school, .life__college, .life__univ, .works__work-sp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,8 +354,80 @@ main {
   text-align: center;
 }
 
+.works__explain {
+  margin: 30px 0;
+}
+
+.works__work-sp:nth-child(4) > .works__img > img {
+  border-radius: 20px;
+}
+
+.works__img {
+  position: relative;
+  z-index: 100;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.works__img > img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.works__texts {
+  background-image: url("../../assets/gray_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  position: relative;
+  z-index: 10;
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+}
+
+.works__name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.works__url > p {
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #222222;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer .logo {
+  display: inline-block;
+  font-size: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.footer__li > a {
+  color: white;
+}
+
+.footer__copyright {
+  padding: 10px;
+}
+
 .swiper-container {
-  overflow: visible !important;
   margin: 40px 0;
 }
 
