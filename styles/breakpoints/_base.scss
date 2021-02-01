@@ -191,11 +191,26 @@ main{
 
   &__title{
     @extend .main-title;
+    margin-bottom: 0;
   }
 
   &__img{
-    width: 60%;
-    height: auto;
+    width: 70px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    & > img{
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    @include animation($name: kf-question-anime, $iteration-count: infinite, $duration: 4s, $timing-function: linear)
+  }
+
+  &__txt{
+    margin: 1em 0;
   }
 
   &__ul{
@@ -430,58 +445,3 @@ main{
   }
 }
 
-.swiper-container {
-  margin: 40px 0;
-}
-
-.swiper-slide{
-  height: 220px;
-
-  &__icon{
-    height: 160px;
-
-    & > svg{
-      width: 100%;
-      height: 100%;
-      max-width: 100%;
-      object-fit: cover;
-      transform: scale(0.6);
-      transition: transform 1.4s ease;
-    }
-  }
-
-  &__skill{
-    position: absolute;
-    left: 50%;
-    bottom: 5%;
-    transform: translate(-50%, 50%);
-    font-size: 20px;
-    font-weight: 800;
-    opacity: 0;
-    transition: opacity 0.3s ease 1s, transform 0.3s ease 1s;
-  }
-
-  &-active{
-
-    & > .swiper-slide__icon > svg{
-      transform: none;
-    }
-
-    & > .swiper-slide__skill{
-      opacity: 1;
-      transform: translate(-50%, -30%);
-    }
-  }
-
-}
-
-@keyframes kf-arrow-anime{
-  0%,
-  50%,
-  100%{
-    transform: translateY(-15%);
-  }
-  70%{
-    transform: none;
-  }
-}

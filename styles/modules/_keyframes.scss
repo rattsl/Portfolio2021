@@ -1,0 +1,22 @@
+@keyframes kf-arrow-anime{
+  0%,
+  50%,
+  100%{
+    transform: translateY(-15%);
+  }
+  70%{
+    transform: none;
+  }
+}
+
+@keyframes kf-question-anime{
+  0%,
+  50%,
+  100%{
+    transform: rotate(45deg);
+  }
+  25%,
+  75%{
+    transform: rotate(-45deg);
+  }
+}
