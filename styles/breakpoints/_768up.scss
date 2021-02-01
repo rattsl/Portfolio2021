@@ -1,0 +1,25 @@
+.content-width-tablet{
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.prof{
+  &__container{
+    @extend .content-width-tablet;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__texts{
+    transform: translateY(60px);
+    // margin-left: 50px; 
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // flex-basis: 80%;
+  }
+
+}
+
