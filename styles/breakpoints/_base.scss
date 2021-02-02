@@ -433,15 +433,24 @@ video{
   padding: 60px 0;
   text-align: center;
 
-  & .logo{
-    display: inline-block;
+  &__inner{
+    @extend .content-width;
+  }
+  
+  &__title{
     font-size: 30px;
-    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &__nav{
+    @extend .flex;
   }
 
   &__ul{
+    @extend .flex;
+    
     list-style: none;
-    padding: 10px 0;
+    margin: 1.2rem 0;
   }
 
   &__li{
@@ -449,11 +458,11 @@ video{
 
     & > a{
       color: $cWhite;
+      text-decoration: none;
     }
   }
 
   &__copyright{
-    @extend .font-sr;
     padding: 10px;
   }
 }
@@ -470,7 +479,7 @@ video{
     color: $cBlack;
     text-decoration: none;
     vertical-align: middle;
-    margin: 0 30px;
+    margin: 0 40px;
   }
 
   &__inner{
@@ -501,26 +510,3 @@ video{
   }
 }
 
-// .icon{
-//   position: relative;
-
-//   @include p-base($left: -20px, $top: 50%, $width: 1em, $height: 1em){
-//     transform: translateY(-50px);
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//   }
-
-//   &.twitter{
-//     &::before{
-//       background-image: url(../../assets/twitter.svg);
-//     }
-//   }
-
-//   &.facebook{
-//     &::before{
-//       background-image: url(../../assets/facebook.svg);
-//     }
-//   }
-
-// }

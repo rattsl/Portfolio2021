@@ -84,3 +84,25 @@ video{
   @extend .content-width-tablet;
 }
 
+.footer{
+  text-align: left;
+
+  & .logo{
+    text-align: start;
+  }
+
+  &__nav{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__ul{
+    flex-direction: row;
+  }
+
+  &__li{
+    padding-right: 10px; 
+  }
+}
+
