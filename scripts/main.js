@@ -16,7 +16,7 @@ class SkillsSlider{
           slidesPerView: 4,
         },
         1024: {
-          slidesPerView: 6,
+          slidesPerView: 5,
         }
       },
       autoplay: {

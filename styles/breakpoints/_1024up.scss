@@ -1,0 +1,18 @@
+.content-width-desktop{
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+video{
+  width: 100%;
+  transform: none;
+}
+
+.skills{
+  @extend .content-width-desktop;
+}
+
+.side{
+  display: block;
+}

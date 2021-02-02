@@ -1,5 +1,5 @@
 .content-width-tablet{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   max-width: $contentMaxWidth;
 }
@@ -29,6 +29,8 @@ video{
 }
 
 .life{
+  @extend .content-width-tablet;
+
   &__childhood{
     flex-direction: row;
     justify-content: space-between;
@@ -72,5 +74,13 @@ video{
     height: 40px;
     margin: 0 auto;
   }
+}
+
+.skills{
+  @extend .content-width-tablet;
+}
+
+.works{
+  @extend .content-width-tablet;
 }
 

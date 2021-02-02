@@ -134,7 +134,9 @@ video{
   left: 0;
   height: 650px;
   width: 100%;
-  background-color: teal;
+  // background-color: teal;
+  // background-color: #080404;
+  background-color: $cBlack;
   z-index: 5;
   overflow: hidden;
 
@@ -456,3 +458,69 @@ video{
   }
 }
 
+.side{
+  display: none;
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50px);
+  color: $cBlack;
+
+  & a,
+  & span{
+    color: $cBlack;
+    text-decoration: none;
+    vertical-align: middle;
+    margin: 0 30px;
+  }
+
+  &__inner{
+  }
+
+  &.left{
+    left: 50px;
+
+    & .side__inner{
+      transform-origin: top left; 
+      transform: rotate(-90deg);
+    }
+  }
+
+  &.right{
+    right: 50px;
+
+    & .side__inner{
+      transform-origin: top right;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__icon{
+    width: 1.2em;
+    height: 1.2em;
+    transform: translateY(-4px);
+  }
+}
+
+// .icon{
+//   position: relative;
+
+//   @include p-base($left: -20px, $top: 50%, $width: 1em, $height: 1em){
+//     transform: translateY(-50px);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//   }
+
+//   &.twitter{
+//     &::before{
+//       background-image: url(../../assets/twitter.svg);
+//     }
+//   }
+
+//   &.facebook{
+//     &::before{
+//       background-image: url(../../assets/facebook.svg);
+//     }
+//   }
+
+// }
