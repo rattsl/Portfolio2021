@@ -326,6 +326,14 @@ video{
   &__heading{
     border-bottom: 3px solid #979797;
   }
+
+  &__img{
+    width: 100%;
+  }
+
+  &__flowline{
+    display: none;
+  }
 }
 
 .skills{
