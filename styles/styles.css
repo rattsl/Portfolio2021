@@ -7,7 +7,7 @@
 }
 
 .mobile-menu__btn > span {
-  background-color: black;
+  background-color: white;
   width: 35px;
   height: 2px;
   display: block;
@@ -243,7 +243,7 @@ img {
   font-weight: 600;
 }
 
-.flex, .header__inner, .prof__container, .life__container, .life__childhood, .life__school, .life__college, .life__univ, .works__work-sp, .footer__nav, .footer__ul {
+.flex, .header__inner, .header__ul, .prof__container, .life__container, .life__childhood, .life__school, .life__college, .life__univ, .works__work-sp, .footer__nav, .footer__ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,6 +275,7 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
 }
 
 .header__inner {
@@ -292,6 +293,30 @@ video {
 
 .header__nav {
   display: none;
+}
+
+.header__ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.header__li {
+  margin: 0 1em;
+}
+
+.header__li > a {
+  color: white;
+  text-decoration: none;
 }
 
 .header .logo {
@@ -735,6 +760,12 @@ video {
     width: 100%;
     -webkit-transform: none;
             transform: none;
+  }
+  .header__nav {
+    display: block;
+  }
+  .mobile-menu__btn {
+    display: none;
   }
   .side {
     display: block;

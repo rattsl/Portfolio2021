@@ -106,6 +106,7 @@ video{
   z-index: 100;
   background-color: transparent;
   align-items: center;
+  color: $cWhite;
 
   &__inner{
     @extend .flex;
@@ -119,6 +120,25 @@ video{
 
   &__nav{
     display: none;
+  }
+
+  &__ul{
+    @extend .flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0;
+
+  }
+
+  &__li{
+    margin: 0 1em;
+    & > a{
+      color: $cWhite;
+      text-decoration: none;
+    }
   }
 
   & .logo{

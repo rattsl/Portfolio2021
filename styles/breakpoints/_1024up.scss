@@ -9,6 +9,16 @@ video{
   transform: none;
 }
 
+.header{
+  &__nav{
+    display: block;
+  }
+}
+
+.mobile-menu__btn{
+  display: none;
+}
+
 .skills{
   @extend .content-width-desktop;
 }
