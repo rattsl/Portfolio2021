@@ -542,7 +542,7 @@ video {
   margin: 30px 0;
 }
 
-.works__work-sp:nth-child(4) > .works__img > img {
+.works__work-sp:nth-child(5) > .works__img > img {
   border-radius: 20px;
 }
 
@@ -581,6 +581,31 @@ video {
 
 .works__url > p {
   margin-bottom: 0;
+}
+
+.works__btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 20px;
+  margin: 0 10px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.works__btn.solid {
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 0 0 black;
+          box-shadow: 2px 2px 0 0 black;
+}
+
+.works__btn.solid:hover {
+  -webkit-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer {

@@ -398,7 +398,7 @@ video{
   &__work-sp{
     @extend .flex;
 
-    &:nth-child(4){
+    &:nth-child(5){
       & > .works__img > img{
         border-radius: 20px;
       }
@@ -446,6 +446,26 @@ video{
 
     & > p{
       margin-bottom: 0; 
+    }
+  }
+
+  &__btn{
+    background-color: $cWhite;
+    color: $cBlack;
+    border: 1px solid $cBlack;
+    padding: 5px 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  
+    &.solid{
+      border-radius: 10px;
+      box-shadow: 2px 2px 0 0 $cBlack;
+      &:hover{
+        transform: translate(2px, 2px);
+        box-shadow: none;
+      }
     }
   }
 
