@@ -94,7 +94,7 @@ main{
 
 video{
   height: 650px;
-  transform: translateX(-375px);
+  transform: translateX(-390px);
 }
 
 .header{
@@ -104,9 +104,19 @@ video{
   width: 100%;
   height: $navHeight;
   z-index: 100;
-  background-color: transparent;
   align-items: center;
-  color: $cWhite;
+  color: $cBlack;
+  backdrop-filter: blur(5px);
+  // background-color: transparent;
+
+  &.inview{
+    // color: $cWhite;
+
+    // & a{
+    //   color: #fff;
+    // }
+    display: none;
+  }
 
   &__inner{
     @extend .flex;
@@ -136,7 +146,7 @@ video{
   &__li{
     margin: 0 1em;
     & > a{
-      color: $cWhite;
+      color: $cBlack;
       text-decoration: none;
     }
   }
@@ -154,8 +164,6 @@ video{
   left: 0;
   height: 650px;
   width: 100%;
-  // background-color: teal;
-  // background-color: #080404;
   background-color: $cBlack;
   z-index: 5;
   overflow: hidden;
@@ -500,9 +508,6 @@ video{
     text-decoration: none;
     vertical-align: middle;
     margin: 0 40px;
-  }
-
-  &__inner{
   }
 
   &.left{

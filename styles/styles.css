@@ -6,8 +6,12 @@
   cursor: pointer;
 }
 
+.mobile-menu__btn.inview {
+  display: none;
+}
+
 .mobile-menu__btn > span {
-  background-color: white;
+  background-color: black;
   width: 35px;
   height: 2px;
   display: block;
@@ -260,8 +264,8 @@ main {
 
 video {
   height: 650px;
-  -webkit-transform: translateX(-375px);
-          transform: translateX(-375px);
+  -webkit-transform: translateX(-390px);
+          transform: translateX(-390px);
 }
 
 .header {
@@ -269,13 +273,18 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 60px;
   z-index: 100;
-  background-color: transparent;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: black;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.header.inview {
+  display: none;
 }
 
 .header__inner {
@@ -315,7 +324,7 @@ video {
 }
 
 .header__li > a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

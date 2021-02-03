@@ -6,8 +6,15 @@
     outline: none !important;
     cursor: pointer;
 
+    &.inview{
+        // & > span{
+        //     background-color: $cWhite;
+        // }
+        display: none;
+    }
+
     & > span {
-        background-color: $cWhite;
+        background-color: $cBlack;
         width: 35px;
         height: 2px;
         display: block;
