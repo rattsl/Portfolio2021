@@ -141,11 +141,6 @@ video{
   // background-color: transparent;
 
   &.inview{
-    // color: $cWhite;
-
-    // & a{
-    //   color: #fff;
-    // }
     display: none;
   }
 
@@ -156,6 +151,13 @@ video{
     flex-direction: row;  
     justify-content: space-between;
     align-items: center;
+
+    & .logo{
+      & > a{
+        text-decoration: none;
+        color: $cBlack;
+      }
+    }
 
   }
 
@@ -175,9 +177,10 @@ video{
   }
 
   &__li{
+    font-weight: 600;
     margin: 0 1em;
     & > a{
-      color: $cBlack;
+      color: $cThinBlack;
       text-decoration: none;
     }
   }

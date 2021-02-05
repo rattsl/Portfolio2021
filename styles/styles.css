@@ -358,6 +358,11 @@ video {
           align-items: center;
 }
 
+.header__inner .logo > a {
+  text-decoration: none;
+  color: black;
+}
+
 .header__nav {
   display: none;
 }
@@ -378,11 +383,12 @@ video {
 }
 
 .header__li {
+  font-weight: 600;
   margin: 0 1em;
 }
 
 .header__li > a {
-  color: black;
+  color: #222222;
   text-decoration: none;
 }
 
