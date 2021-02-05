@@ -33,6 +33,7 @@ class MobileMenu {
   constructor() {
       this.DOM = {};
       this.DOM.btn = document.querySelector('.mobile-menu__btn');
+      this.DOM.back = document.querySelector('.mobile-menu__back');
       this.DOM.cover = document.querySelector('.mobile-menu__cover');
       this.DOM.container = document.querySelector('#global-container');
       this.eventType = this._getEventType();
@@ -49,6 +50,7 @@ class MobileMenu {
 
   _addEvent() {
       this.DOM.btn.addEventListener(this.eventType, this._toggle.bind(this));
+      this.DOM.back.addEventListener(this.eventType, this._toggle.bind(this));
       this.DOM.cover.addEventListener(this.eventType, this._toggle.bind(this));
   }
 }

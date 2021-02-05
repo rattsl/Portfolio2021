@@ -112,6 +112,10 @@ img {
   flex-direction: column;
 }
 
+#global-container{
+  background-color: $cThinBlack;
+}
+
 #container{
   position: relative;
   z-index: 2;

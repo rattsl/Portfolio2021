@@ -3,7 +3,7 @@
 .mobile-menu{
     position: fixed;
     top: 20px;
-    right: 49px;
+    right: 40px;
     background-color: $cThinBlack;
 
 
@@ -20,10 +20,22 @@
         z-index: 2;
     }
 
+    &__back{
+        width: 35px;
+
+        & > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            color: $cWhite;
+        }
+    }
+
     &__title{
         color: $cWhite;
         font-size: 2em;
         margin: 1em 0;
+        font-weight: 600;
     }
 
     &__ul{
@@ -33,7 +45,8 @@
 
     &__li{
         list-style: none;
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 2em;
 
         & > a{
             text-decoration: none;
@@ -72,6 +85,8 @@
     background-color: $cThinBlack;
 
     & .mobile-menu{
+        background-color: $cThinBlack;
+
         &__cover{
             opacity: 1;
             visibility: visible;
