@@ -17,6 +17,7 @@
 <body>
   <div id="global-container">
     <div id="container">
+      <div class="mobile-menu__cover"></div>
       <header class="header">
         <div class="header__inner">
           <div class="logo item">
@@ -31,8 +32,7 @@
               <li class="header__li item"><a href="#works">WORKS</a></li>
             </ul>
           </nav>
-          <button class="mobile-menu__btn"
-          onclick="document.querySelector('body').classList.toggle('menu-open');">
+          <button class="mobile-menu__btn">
             <span></span>
             <span></span>
             <span></span>
@@ -80,7 +80,7 @@
                 <li class="about__li">・iTyped.js</li>
                 <li class="about__li">・Git</li>
               </ul>
-              <p class="about__txt">ソースコードは<a href="https://github.com/rattsl/Portfolio2021">こちらに</a>に置いておくので興味があればぜひ！</p>
+              <p class="about__txt">ソースコードは<a href="https://github.com/rattsl/Portfolio2021">こちら</a>に置いておくので興味があればぜひ！</p>
             </div>
           </section>
           <section class="prof" id="prof">
@@ -114,11 +114,15 @@
                     <h2 class="life__heading">幼少期</h2>
                     <p class="life__text">大都会福井の地にて爆誕。3兄弟の末っ子として何不自由のない生活を送る。(写真真ん中)真ん中の兄(写真右)に日々泣かされていた為、長男(写真左)と手を組み共闘し撃退する術を見つける。将来の夢は仮面ライダークウガだった。</p>
                   </div>
-                  <img class="life__img" src="assets/childhood2.png" alt="childhood">
+                  <div class="life__img">
+                    <img src="assets/childhood2.png" alt="childhood">
+                  </div>
                 </div>
                 <img src="assets/flowline2.png" alt="flowline" class="life__flowline">
                 <div class="life__school">
-                  <img class="life__img" src="assets/student.JPG" alt="student">
+                  <div class="life__img">
+                    <img src="assets/student.JPG" alt="student">
+                  </div>
                   <div class="life__texts">
                     <h2 class="life__heading">学生時代（小・中・高）</h2>
                     <p class="life__text">兄の影響で小1からサッカーを始める。中学では北信越大会まで出場しベスト8まで奮闘する。（ポジション：ライトベンチ）勉強という勉強は全くせず、どうやったら女子からモテるかばかり考えていた。</p>
@@ -130,11 +134,15 @@
                     <h2 class="life__heading">大学時代前期（1,2年次）</h2>
                     <p class="life__text">現役時代、大学受験に失敗し（勉強していなかったので当たり前である）、浪人しようとしていたところ、大学編入という制度があることを知り、編入を志す。結局第一志望には合格することができなかったが、共通の目的を持つ仲間と日々切磋琢磨し、非常にいい経験になった。</p>
                   </div>
-                  <img class="life__img" src="assets/college_study.png" alt="college">
+                  <div class="life__img">
+                    <img src="assets/college_study.png" alt="college">
+                  </div>
                 </div>
                 <img src="assets/flowline2.png" alt="flowline" class="life__flowline">
                 <div class="life__univ">
-                  <img class="life__img" src="assets/univ_student.jpg" alt="univ">
+                  <div class="life__img">
+                    <img src="assets/univ_student.jpg" alt="univ">
+                  </div>
                   <div class="life__texts">
                     <h2 class="life__heading">大学時代後期（3,4年次）</h2>
                     <p class="life__text">3年次編入後は友人の影響でプログラミングに熱中。GeekSalonでアプリを作った後、インターン等にも参加する。授業中もPCを開いてコードを書いていた為、先生に目を付けられ単位が危うくなるも、ギリギリ卒業に嗅ぎつける。</p>
@@ -322,8 +330,8 @@
             <div class="works__inner">
               <h1 class="works__title">WORKS</h1>
               <p class="works__explain">私が作ったものを載せていきます。完成仕切っていなものやエラーが出ているものなど作品と呼べるかどうかわかりませんが、こんなものを作ったんだなくらいで暖かく見てください。</p>
-              <div class="works__container-sp">
-                <div class="works__work-sp">
+              <div class="works__container">
+                <div class="works__work">
                   <div class="works__img">
                     <img src="assets/rattsl_sp.png" alt="rattsl">
                   </div>
@@ -341,7 +349,7 @@
                     <div class="works__text">当サイト。aboutと重複しますがUIライブラリ等使わずスクラッチで自作しました。デザインはネットサーフィンし様々ななサイトを参考に制作しました。個人的にアイキャッチがお気に入りです。</div>
                   </div>
                 </div>
-                <div class="works__work-sp">
+                <div class="works__work">
                   <div class="works__img">
                     <img src="assets/blog_sp.png" alt="blog">
                   </div>
@@ -359,7 +367,7 @@
                     <div class="works__text">最近アツいReact製静的サイトジェネレータGatsby.jsとNetlifyでJamstackなブログを作りました。</div>
                   </div>
                 </div>
-                <div class="works__work-sp">
+                <div class="works__work">
                   <div class="works__img">
                     <img src="assets/isara_sp.png" alt="isara">
                   </div>
@@ -376,7 +384,7 @@
                     <div class="works__text">isaraの模写コーディングにチャレンジしました。モバイルファーストでコーディングしているのですが、デスクトップ用のレスポンシブ化がまだできていません。現在実装中です。</div>
                   </div>
                 </div>
-                <div class="works__work-sp">
+                <div class="works__work">
                   <div class="works__img">
                     <img src="assets/identimal_sp.png" alt="identimal">
                   </div>
@@ -394,7 +402,7 @@
                     <div class="works__text">geeksalonのwebexコースで友人と共同制作した動物性格診断アプリです。Vue.jsとFirebaseで作られてます。いくつか質問に答えるとその人の性格に合った動物が抽出され、はじめに撮った自分の顔写真とその動物がコラ画像となって牧場に放たれるというアプリですが、現在登録されたユーザの動物が表示されなくなるエラーが出ています。コードは友人のレポジトリがPrivateになっている為見れません。ご了承下さい。</div>
                   </div>
                 </div>
-                <div class="works__work-sp">
+                <div class="works__work">
                   <div class="works__img">
                     <img src="assets/microQuizApp.001.jpeg" alt="micro">
                   </div>
@@ -410,7 +418,7 @@
                   </div>
                 </div>
               </div>
-              <div class="works__container-dt"></div>
+              <!-- <div class="works__container-dt"></div> -->
             </div>
           </section>
         </main>
@@ -440,6 +448,36 @@
         </div>
       </footer>
     </div>
+    <nav class="mobile-menu">
+      <div class="mobile-menu__title">RATTSL.COM</div>
+      <ul class="mobile-menu__ul">
+        <li class="mobile-menu__li">
+          <a class="mobile-menu__link" href="#">
+            <div class="main-title">ABOUT</div>
+          </a>
+        </li>
+        <li class="mobile-menu__li">
+          <a class="mobile-menu__link" href="#">
+            <div class="main-title">PROFILE</div>
+          </a>
+        </li>
+        <li class="mobile-menu__li">
+          <a class="mobile-menu__link" href="#">
+            <div class="main-title">LIFE</div>
+          </a>
+        </li>
+        <li class="mobile-menu__li">
+          <a class="mobile-menu__link" href="#">
+            <div class="main-title">SKILLS</div>
+          </a>
+        </li>
+        <li class="mobile-menu__li">
+          <a class="mobile-menu__link" href="#">
+            <div class="main-title">WORKS</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 
   <script src="https://unpkg.com/ityped@1.0.3"></script>

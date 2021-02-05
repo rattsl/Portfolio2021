@@ -22,6 +22,7 @@ img {
 .font-sr{
   font-size: 12px;
   font-weight: 600;
+  margin-bottom: 1em;
 }
 
 .font-sm{
@@ -36,7 +37,7 @@ img {
   font-weight: 600;
 }
 .font-lg{
-  font-size: 25x;
+  font-size: 28px;
 }
 
 //margin,padding
@@ -61,7 +62,7 @@ img {
 
 //section-sparate
 .sec-space{
-  padding: 50px 0 !important;
+  padding: 100px 0 !important;
 }
 
 .content-width{
@@ -82,9 +83,39 @@ img {
   font-weight: 600;
 }
 
+// .decolate{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   &::before,
+//   &::after{
+//     content: '';
+//     width: 45px;
+//     height: 5px;
+//     background: $cBlack;
+//   }
+
+//   &::before{
+//     transform: rotate(60deg);
+//   }
+
+//   &::after{
+//     transform: rotate(-60deg);
+//   }
+// }
+
+
+
 .flex{
   display: flex;
   flex-direction: column;
+}
+
+#container{
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s;
 }
 
 main{
@@ -252,6 +283,10 @@ video{
   &__ul{
     list-style: none;
   }
+
+  & a{
+    color: $cBlack;
+  }
 }
 
 .prof{
@@ -264,6 +299,7 @@ video{
 
   &__container{
     @extend .flex;
+    flex-wrap: nowrap;
 
     position: relative;
     top: 0;
@@ -272,7 +308,7 @@ video{
 
   &__img{
     width: 80%;
-    max-width: 450px;
+    max-width: 500px;
     position: relative;
     z-index: 100;
 
@@ -280,14 +316,12 @@ video{
 
   &__texts{
     width: 80%;
-    max-width: 450px;
+    max-width: 500px;
     background-image: url("../../assets/gray_bg.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     color: $cWhite;
-    text-align: center;
-    padding-top: 80px; 
-    padding-bottom: 20px; 
+    padding: 80px 0 30px 0; 
     margin: 0 0 0 auto;
     transform: translateY(-60px);
     position: relative;
@@ -295,18 +329,28 @@ video{
   }
 
   &__name{
-    @extend .main-title;
+    text-align: center;
+    margin-bottom: 0; 
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 1em;
   }
 
   &__sub{
+    text-align: center;
     @extend .sub-title;
+    margin-bottom: 2em; 
   }
 
   &__ul{
-    margin: 20px;
+    margin: 0 25px;
     padding: 20px;
     border-top: 3px solid #fff;
     list-style: none;
+  }
+
+  &__li{
+    margin-bottom: 0.6em;
   }
 
 }
@@ -372,6 +416,7 @@ video{
   &__title{
     @extend .content-width;
     @extend .mb-sm;
+    @extend .main-title;
     
     text-align: center;
   }
@@ -388,6 +433,8 @@ video{
   @extend .content-width;
   
   &__title{
+    @extend .main-title;
+
     text-align: center;
   }
 
@@ -395,10 +442,16 @@ video{
     margin: 30px 0;
   }
 
-  &__work-sp{
+  &__container{
+    @extend .flex;
+  }
+
+  &__work{
     @extend .flex;
 
     &:nth-child(5){
+      flex-basis: 100%;
+
       & > .works__img > img{
         border-radius: 20px;
       }
@@ -429,6 +482,7 @@ video{
     position: relative;
     z-index: 10;
     transform: translateY(-70px);
+    margin: 10px;
   }
 
   &__name{
@@ -451,21 +505,27 @@ video{
 
   &__btn{
     background-color: $cWhite;
-    color: $cBlack;
+    // background-image: url(../../assets/gray_bg.jpg);
     border: 1px solid $cBlack;
     padding: 5px 20px;
     margin: 0 10px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
   
     &.solid{
-      border-radius: 10px;
+      // border-radius: 10px;
       box-shadow: 2px 2px 0 0 $cBlack;
       &:hover{
         transform: translate(2px, 2px);
         box-shadow: none;
       }
+    }
+
+    & > a{
+      color: $cBlack;
+      text-decoration: none;
     }
   }
 

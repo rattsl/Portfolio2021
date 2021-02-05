@@ -19,8 +19,85 @@ video{
   display: none;
 }
 
+.about{
+  &__txt{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+}
+
+.prof{
+  &__container{
+    margin-top: 80px;
+  }
+
+  &__img{
+    flex-basis: 50%;
+  }
+  &__texts{
+    flex-basis: 50%;
+    transform: translateY(60px);
+  }
+
+  &__ul{
+    padding: 35px;
+  }
+}
+
+.life{
+  &__explain{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  &__container{
+    padding-top: 40px;
+  }
+
+  &__heading{
+    padding-bottom: 0.5ex; 
+  }
+
+  &__text{
+    padding: 30px 20px;
+  }
+}
+
 .skills{
   @extend .content-width-desktop;
+
+  &__explain{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+}
+
+.works{
+  &__explain{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  &__container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 60px; 
+  }
+
+  &__work{
+    flex-basis: 50%;
+
+    &:nth-child(5){
+      & > .works__texts{
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .side{

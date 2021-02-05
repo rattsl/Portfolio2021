@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
   const skills = new SkillsSlider();
+  const menu = new MobileMenu();
 })
 
 class SkillsSlider{
@@ -27,9 +28,37 @@ class SkillsSlider{
   }
 }
 
+
+class MobileMenu {
+  constructor() {
+      this.DOM = {};
+      this.DOM.btn = document.querySelector('.mobile-menu__btn');
+      this.DOM.cover = document.querySelector('.mobile-menu__cover');
+      this.DOM.container = document.querySelector('#global-container');
+      this.eventType = this._getEventType();
+      this._addEvent();
+  }
+
+  _getEventType() {
+      return window.ontouchstart ? 'touchstart' : 'click';
+  }
+
+  _toggle() {
+      this.DOM.container.classList.toggle('menu-open');
+  }
+
+  _addEvent() {
+      this.DOM.btn.addEventListener(this.eventType, this._toggle.bind(this));
+      this.DOM.cover.addEventListener(this.eventType, this._toggle.bind(this));
+  }
+}
+
+
+
 const hero = document.querySelector('.hero');
 const header = document.querySelector('.header');
-const btn = document.querySelector('.mobile-menu__btn')
+const btn = document.querySelector('.mobile-menu__btn');
+
 const cb = function(entries, observer){
   entries.forEach(entry => {
     if(entry.isIntersecting){
@@ -44,6 +73,11 @@ const cb = function(entries, observer){
 
 const io = new IntersectionObserver(cb);
 io.observe(hero);
+
+
+
+
+
 
 const el = document.querySelector("#ityped")
 
