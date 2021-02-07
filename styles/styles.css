@@ -491,7 +491,7 @@ video {
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url("../../assets/bg.jpeg");
+  background-image: url("../../assets/bg.jpg");
 }
 
 .about {
@@ -567,7 +567,7 @@ video {
 .prof__texts {
   width: 80%;
   max-width: 500px;
-  background-image: url("../../assets/gray.jpeg");
+  background-image: url("../../assets/gray.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -674,7 +674,7 @@ video {
 }
 
 .works__texts {
-  background-image: url("../../assets/gray.jpeg");
+  background-image: url("../../assets/gray.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
